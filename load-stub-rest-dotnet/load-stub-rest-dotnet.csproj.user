@@ -4,6 +4,7 @@
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
   </PropertyGroup>
   <PropertyGroup>
-    <ActiveDebugProfile>Docker</ActiveDebugProfile>
+    <ActiveDebugProfile>load_stub_rest_dotnet</ActiveDebugProfile>
+    <NameOfLastUsedPublishProfile>D:\git\load-stub\load-stub-rest-dotnet\Properties\PublishProfiles\localhost_5000.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>
