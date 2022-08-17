@@ -1,0 +1,37 @@
+{
+  
+  "BackgroundLoop": {
+    "Type": "OperationsList",
+    "Config": {},
+    "Modifiers": [],
+    "Children": [
+      {
+        "Type": "ConsumeCpu",
+        "Config": "s",
+        "Modifiers": [
+          {
+            "ModifierType": "FixedValue",
+            "Values": {
+              "Value": 10
+            }
+          }
+        ],
+        "Children": []
+      },
+      {
+        "Type": "Sleep",
+        "Config": "s",
+        "Modifiers": [
+          {
+            "ModifierType": "FixedValue",
+            "Values": {
+              "Value": 20
+            }
+          }
+        ],
+        "Children": []
+      }
+
+    ]
+  }
+}

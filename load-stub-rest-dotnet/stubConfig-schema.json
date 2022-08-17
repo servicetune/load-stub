@@ -1,0 +1,133 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "BackgroundLoop": {
+      "type": "object",
+      "properties": {
+        "Type": {
+          "type": "string"
+        },
+        "Config": {
+          "type": "object"
+        },
+        "Modifiers": {
+          "type": "array",
+          "items": {}
+        },
+        "Children": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "Type": {
+                  "type": "string"
+                },
+                "Config": {
+                  "type": "string"
+                },
+                "Modifiers": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "ModifierType": {
+                          "type": "string"
+                        },
+                        "Values": {
+                          "type": "object",
+                          "properties": {
+                            "Value": {
+                              "type": "integer"
+                            }
+                          },
+                          "required": [
+                            "Value"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "ModifierType",
+                        "Values"
+                      ]
+                    }
+                  ]
+                },
+                "Children": {
+                  "type": "array",
+                  "items": {}
+                }
+              },
+              "required": [
+                "Type",
+                "Config",
+                "Modifiers",
+                "Children"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "Type": {
+                  "type": "string"
+                },
+                "Config": {
+                  "type": "string"
+                },
+                "Modifiers": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "ModifierType": {
+                          "type": "string"
+                        },
+                        "Values": {
+                          "type": "object",
+                          "properties": {
+                            "Value": {
+                              "type": "integer"
+                            }
+                          },
+                          "required": [
+                            "Value"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "ModifierType",
+                        "Values"
+                      ]
+                    }
+                  ]
+                },
+                "Children": {
+                  "type": "array",
+                  "items": {}
+                }
+              },
+              "required": [
+                "Type",
+                "Config",
+                "Modifiers",
+                "Children"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "Type",
+        "Config",
+        "Modifiers",
+        "Children"
+      ]
+    }
+  },
+  "required": [
+    "BackgroundLoop"
+  ]
+}

@@ -1,13 +1,4 @@
 {
-  "$schema": "https://json.schemastore.org/launchsettings.json",
-  "iisSettings": {
-    "windowsAuthentication": false,
-    "anonymousAuthentication": true,
-    "iisExpress": {
-      "applicationUrl": "http://localhost:64956",
-      "sslPort": 0
-    }
-  },
   "profiles": {
     "load_stub_rest_dotnet": {
       "commandName": "Project",
@@ -27,6 +18,15 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
       "publishAllPorts": true
+    }
+  },
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:64956",
+      "sslPort": 0
     }
   }
 }
